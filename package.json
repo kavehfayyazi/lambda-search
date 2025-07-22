@@ -1,0 +1,8 @@
+{
+    "name": "lambda-search",
+    "type": "module",
+    "dependencies": {
+        "dotenv": "^17.2.0",
+        "openai": "^4.1"
+    }
+}
