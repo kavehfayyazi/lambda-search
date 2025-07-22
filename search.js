@@ -17,7 +17,7 @@ const jsonResponse = (status, obj) => ({
 
 export const handler = async(event) => {
   // CORS preflight
-  if (event.httpmethod === "OPTIONS"){
+  if (event.httpMethod === "OPTIONS"){
     return jsonResponse(200, {})
   }
 
