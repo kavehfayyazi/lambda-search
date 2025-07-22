@@ -29,8 +29,8 @@ export const handler = async(event) => {
     }
 
     const response = await openai.responses.create({
-      mode: "gpt-4.1",
-      messages: [
+      model: "gpt-4.1",
+      input: [
         {role: "system", content: "You are a concise programming assistant."},
         {role: "user", content: `In ${language} using ${library}, answer: ${query}.
           Return: 
