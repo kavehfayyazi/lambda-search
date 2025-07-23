@@ -29,7 +29,7 @@ export const handler = async(event) => {
     }
 
     const response = await openai.responses.create({
-      model: "gpt-4.1",
+      model: process.env.OPENAI_MODEL,
       input: [
         {role: "system", content: "You are a concise programming assistant."},
         {role: "user", content: `In ${language} using ${library}, answer: ${query}.
